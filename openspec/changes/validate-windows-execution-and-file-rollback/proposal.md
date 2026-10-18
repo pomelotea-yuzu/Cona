@@ -27,14 +27,14 @@ Cona 已确定以“安全可控、易用美观”为工作重点，首版先在
 
 - 本 change 的提案产物包括 OpenSpec 配置、提案、设计、规范、任务清单与验证矩阵；实现阶段另交付原型、运行证据和路线结论。
 - 同步维护：现有两份设计文档的提案状态和仓库信息已更新，此项不代表原型交付完成。
-- 原型阶段约定代码放在 `prototypes/windows-execution/`，合成样例放在该目录的 `fixtures/`，运行证据放在 `output/windows-execution-validation/<run-id>/`；以上运行目录本轮不创建、不执行。
+- 原型阶段约定代码放在 `prototypes/windows-execution/`，合成样例放在该目录的 `fixtures/`，运行证据放在 `output/windows-execution-validation/<run-id>/`；代码、样例与证据均仅本机保留、不入库。
 - Windows 系统接口及原生构建工具链需要后续验证；本次不安装 SDK、驱动、虚拟机、容器或文档引擎，不选择未经证实的性能数字。
 - 不需要真实模型 API 或真实凭据；网络与模型发送边界可先用测试服务验证。不得把测试输出中的秘密写进可提交证据。
 - DOCX/PDF 编辑与排版验证另建 change；本次仅检查受限执行器运行文档工具的接口条件，选定转换工具后的真实进程兼容性仍是后续放行门槛。
-- 不建设正式 Electron 应用、跨平台后端、远程执行或通用沙箱平台；本次不复制 ReBaseAgent 代码，也不提交或推送仓库。
+- 不建设正式 Electron 应用、跨平台后端、远程执行或通用沙箱平台；本次不复制 ReBaseAgent 代码，且原型代码、合成样例与运行证据仅本机保留、不入库，仓库只提交提案、规范与结论。
 
 ## References
 
-- [统一设计方案](../../../docs/drafts/2026-10-18-Agent独立产品统一设计方案.md)：第 5.3、5.4、9.2、11.4、12、13.3、16、17 节。
-- [产品大框架讨论纪要](../../../docs/drafts/2026-10-18-Agent产品大框架讨论纪要.md)。
+- [统一设计方案](../../../docs/product/product-design.md)：第 5.3、5.4、9.2、11.4、12、13.3、16、17 节。
+- [产品大框架讨论纪要](../../../docs/collab/sessions/2026-10-18-product-framework-discussion.md)（本机保留、不入库）。
 - [验证矩阵](validation-matrix.md)。

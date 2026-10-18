@@ -8,8 +8,8 @@ context: |
   Workspace: D:/Cona.
   Repositories: https://github.com/pomelotea-yuzu/Cona.git and https://gitee.com/yuzu-tea-duck/cona.git.
   Product priorities: 安全可控、易用美观.
-  Source of decisions: docs/drafts/2026-10-18-Agent独立产品统一设计方案.md
-    and docs/drafts/2026-10-18-Agent产品大框架讨论纪要.md.
+  Source of decisions: docs/product/product-design.md
+    and docs/collab/sessions/2026-10-18-product-framework-discussion.md (latter kept locally, not committed).
   Windows first, cross-platform core with platform execution adapters.
   Build execution management and adapters; reuse OS isolation primitives.
   AppContainer + precise ACLs + Job Object is a candidate requiring validation.

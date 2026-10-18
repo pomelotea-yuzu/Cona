@@ -65,11 +65,17 @@ vitest.config.ts.bak
 # 需要共享的脱敏结论、手写文档应先整理到正式文档或 OpenSpec change。
 /output/
 
-# 评审过程截图（需要提交的验收证据可显式加入）
-/docs/reviews/**/*.png
+# 评审过程记录与截图整体本机保留
+/docs/reviews/
 
-# 个人讨论与设计草稿，沿用参考项目的本地保留方式
-# 当前统一设计与讨论纪要位于此处；共享前需整理为正式文档。
+# docs：只提交面向使用者／维护者的层（guide / architecture / development / product，以及 docs 地图）
+# 工程过程资产（调研、执行方案与报告、协作记录、草稿）仅本机保留、不入库。
+/docs/research/
+/docs/engineering/
+/docs/collab/
+/HANDOFF.md
+
+# 个人讨论与设计草稿的本地保留区（2026-10-18 起，原有的统一设计方案与讨论纪要已整理进 docs/product 与 docs/collab/sessions）
 /docs/drafts/
 
 # OpenSpec 提案、规范与评审不在忽略范围内。

@@ -1,7 +1,7 @@
 # Review：validate-windows-execution-and-file-rollback
 
 评审日期：2026-10-18
-评审对象：[proposal.md](proposal.md)、[design.md](design.md)、[tasks.md](tasks.md)、[validation-matrix.md](validation-matrix.md)、[windows-execution-prototype/spec.md](specs/windows-execution-prototype/spec.md)、[workspace-recovery-prototype/spec.md](specs/workspace-recovery-prototype/spec.md)，并对照 [统一设计方案](../../../docs/drafts/2026-10-18-Agent独立产品统一设计方案.md) 第 5.3、5.4、9.2、11.4、12、13.3、16、17 节与 [openspec/config.yaml](../../config.yaml) 的产物规则。
+评审对象：[proposal.md](proposal.md)、[design.md](design.md)、[tasks.md](tasks.md)、[validation-matrix.md](validation-matrix.md)、[windows-execution-prototype/spec.md](specs/windows-execution-prototype/spec.md)、[workspace-recovery-prototype/spec.md](specs/workspace-recovery-prototype/spec.md)，并对照 [统一设计方案](../../../docs/product/product-design.md)（评审时为 `docs/drafts/2026-10-18-Agent独立产品统一设计方案.md`，后移至正式文档位置）第 5.3、5.4、9.2、11.4、12、13.3、16、17 节与 [openspec/config.yaml](../../config.yaml) 的产物规则。
 评审性质：提案阶段的文档一致性与完备性评审，不含原型代码审查（尚无实现）。
 
 ## 1. 总体评价
