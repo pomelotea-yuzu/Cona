@@ -1,0 +1,55 @@
+schema: spec-driven
+
+context: |
+  Language: zh-CN
+  All artifacts must be written in zh-CN.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+  Product: Cona (Continue + Agent), an independent local desktop Agent.
+  Workspace: D:/Cona.
+  Repositories: https://github.com/pomelotea-yuzu/Cona.git and https://gitee.com/yuzu-tea-duck/cona.git.
+  Product priorities: 安全可控、易用美观.
+  Source of decisions: docs/drafts/2026-10-18-Agent独立产品统一设计方案.md
+    and docs/drafts/2026-10-18-Agent产品大框架讨论纪要.md.
+  Windows first, cross-platform core with platform execution adapters.
+  Build execution management and adapters; reuse OS isolation primitives.
+  AppContainer + precise ACLs + Job Object is a candidate requiring validation.
+  Default to managed workspace copies, controlled delivery and recoverable file versions.
+  A copy, Git, Job Object, prompt or separate process alone is not a sandbox.
+  Never silently fall back to unrestricted execution when isolation fails.
+  Model data sending is scoped per project, excludes credentials by default,
+    and does not inherit permission merely from local file access.
+  Validate UX and visual design through interactive prototypes before finalizing.
+  The current change is an M0 validation proposal; prototype implementation has not started.
+
+rules:
+  proposal:
+    - Distinguish confirmed product decisions, design defaults and unverified hypotheses.
+    - Keep DOCX/PDF editing verification separate from Windows execution validation.
+  specs:
+    - Describe observable prototype behavior and evidence, not unverified production guarantees.
+  design:
+    - Include fail-closed behavior, trust boundaries, recovery conflicts and measurement limits.
+  tasks:
+    - State verification evidence in each task; keep unimplemented work unchecked.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
